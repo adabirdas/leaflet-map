@@ -1,0 +1,181 @@
+#map {
+    height: 100vh; /* Adjust map height */
+    width: 100%; /* Adjust map width */
+    position: relative;
+}
+
+
+
+
+
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.legend {
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.7;
+}
+#legend {
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.leaflet-control-zoom {
+    /* Adjust the position as needed */
+    position: absolute;
+    top: 60px;
+    left: 5px;
+    
+  }
+#location-button{
+    position: absolute;
+    right: 20px;
+    top: 200px;
+   
+    z-index: 1000;
+}
+
+#routing{
+    position: absolute;
+    right: 20px;
+    top: 240px;
+   
+    z-index: 1000;
+
+
+}
+.alert {
+    z-index: 2000;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: yellow;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.custom-routing-control {
+    position: absolute;
+    top: 20px;
+    left: 5px;
+    z-index: 1000;
+    /* Add any additional styles here */
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-routing-control {
+        top: 20px; /* Adjust for tablet devices */
+        left: 50px; /* Adjust for tablet devices */
+    }
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+    .custom-routing-control {
+        top: 15px; /* Adjust for mobile devices */
+        left: 5px; /* Adjust for mobile devices */
+    }
+}
+
+
+
+
+      /* Custom styles for GeoSearch control */
+      .leaflet-bar.geosearch-bar {
+        position: absolute; /* Position the GeoSearch button relatively */
+        top: 100px;
+    }
+
+    .leaflet-bar.geosearch-bar .geosearch-button {
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none; /* Remove button border */
+        border-radius: 5px; /* Button border radius */
+        padding: 5px 10px; /* Button padding */
+        cursor: pointer; /* Cursor style */
+    }
+
+    .leaflet-bar.geosearch-bar .geosearch-button:hover {
+        background-color: #0056b3; /* Button background color on hover */
+    }
+
+    /* Adjust the position of the GeoSearch button */
+    .leaflet-top .leaflet-control {
+        top: 60px; /* Adjust the top position of the GeoSearch button */
+    }
+
+    .leaflet-left .leaflet-control {
+        left: 20px; /* Adjust the left position of the GeoSearch button */
+    }
+
+    /* marker */
+    #marker{
+        position: absolute;
+        top:160px;
+        right: 20px;
+        z-index: 1000;
+    }
+    #markerMenu{
+        position: relative;
+        top:160px;
+        left: 120px;
+        z-index: 1001;
+        
+
+    }
+
+    #distance{
+        position: relative;
+        top:280px;
+        left: 1455px;
+        z-index: 1000;
+        
+    }
+    .leaflet-measure-toolbar {
+        color: orange;
+    }
+
+    .scrollable-menu .dropdown-menu {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    #legend{
+        
+        position: absolute;
+        z-index: 1000;
+        
+        left: 1218px;
+        top: 282px;
+        height: 440px;
+        width: 300px;
+        
+    }
